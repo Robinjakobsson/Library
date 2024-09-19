@@ -70,8 +70,7 @@ public class Book {
         }
 
     }
-    public void returnBook (){
-
+    public void returnBook (Book book) {
         System.out.println("Thank you!");
         available = true;
         edition = 1;
@@ -79,6 +78,6 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Author: " + author + " Title: " + title + " Edition: " + " Year: " + year +  " Available: " + available;
+        return "Author: " + author + " Title: " + title + " Edition: " + edition +  " Year: " + year +  " Available: " + available;
     }
 }
